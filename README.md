@@ -1,6 +1,6 @@
 # SCKS toolbox
 
-Implementaion of Square-root Cubature Kalman Filter& Square-root Rauch-Tang-Striebel Smoother for modeling time sequences as described in [1,2].
+Implementaion of Square-root Cubature Kalman Filter& Square-root Rauch-Tang-Striebel Smoother for modeling time sequences as described in [1,2]. Tested with Matlab R2015b.
 
 This algorithm performs joint estimation of the states, input and parameters of the model that is described as a stochastic continuous-discrete state-space in terms of nonlinear blind deconvolution. The state equations must have the form of ordinary differential equations, where the discretization is performed through local-linearization scheme [3]. Additionally, the parameter noise covariance is estimated online via stochastic Robbins-Monro approximation method [4], and the measurement noise covariance is estimated online as well by using combination of varitional Bayesian (VB) approach with nonlinear filter/smoother [5].
 
